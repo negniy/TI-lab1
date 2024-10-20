@@ -1,4 +1,6 @@
-﻿namespace Lab1_StepanovDmitriy_6411
+﻿using System.Windows.Forms;
+
+namespace Lab1_StepanovDmitriy_6411
 {
     partial class Form1
     {
@@ -46,33 +48,33 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtFIO = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtProbabilities2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtCompression2 = new System.Windows.Forms.TextBox();
+            this.txtEncodedSize2 = new System.Windows.Forms.TextBox();
+            this.txtOriginalSize2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.btnHuffmanEncode = new System.Windows.Forms.Button();
+            this.txtCode2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtFIO2 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtCompression3 = new System.Windows.Forms.TextBox();
+            this.txtEncodedSize3 = new System.Windows.Forms.TextBox();
+            this.txtOriginalSize3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.btnAlgEncode = new System.Windows.Forms.Button();
+            this.txtCode3 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtFIO3 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -133,6 +135,7 @@
             this.txtProbabilities.Multiline = true;
             this.txtProbabilities.Name = "txtProbabilities";
             this.txtProbabilities.ReadOnly = true;
+            this.txtProbabilities.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtProbabilities.Size = new System.Drawing.Size(446, 151);
             this.txtProbabilities.TabIndex = 15;
             // 
@@ -213,6 +216,7 @@
             this.btnEncode.TabIndex = 6;
             this.btnEncode.Text = "Закодировать";
             this.btnEncode.UseVisualStyleBackColor = true;
+            this.btnEncode.Click += new System.EventHandler(this.btnEncode_Click);
             // 
             // txtCode
             // 
@@ -250,20 +254,20 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.txtProbabilities2);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Controls.Add(this.textBox10);
+            this.tabPage2.Controls.Add(this.txtCompression2);
+            this.tabPage2.Controls.Add(this.txtEncodedSize2);
+            this.tabPage2.Controls.Add(this.txtOriginalSize2);
             this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.btnHuffmanEncode);
+            this.tabPage2.Controls.Add(this.txtCode2);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.textBox12);
+            this.tabPage2.Controls.Add(this.txtFIO2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -272,14 +276,14 @@
             this.tabPage2.Text = "Хаффмана";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtProbabilities2
             // 
-            this.textBox7.Location = new System.Drawing.Point(8, 172);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(446, 151);
-            this.textBox7.TabIndex = 29;
+            this.txtProbabilities2.Location = new System.Drawing.Point(8, 172);
+            this.txtProbabilities2.Multiline = true;
+            this.txtProbabilities2.Name = "txtProbabilities2";
+            this.txtProbabilities2.ReadOnly = true;
+            this.txtProbabilities2.Size = new System.Drawing.Size(446, 151);
+            this.txtProbabilities2.TabIndex = 29;
             // 
             // label7
             // 
@@ -317,29 +321,29 @@
             this.label10.TabIndex = 25;
             this.label10.Text = "Сжатие";
             // 
-            // textBox8
+            // txtCompression2
             // 
-            this.textBox8.Location = new System.Drawing.Point(545, 301);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(210, 22);
-            this.textBox8.TabIndex = 24;
+            this.txtCompression2.Location = new System.Drawing.Point(545, 301);
+            this.txtCompression2.Name = "txtCompression2";
+            this.txtCompression2.ReadOnly = true;
+            this.txtCompression2.Size = new System.Drawing.Size(210, 22);
+            this.txtCompression2.TabIndex = 24;
             // 
-            // textBox9
+            // txtEncodedSize2
             // 
-            this.textBox9.Location = new System.Drawing.Point(545, 236);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(210, 22);
-            this.textBox9.TabIndex = 23;
+            this.txtEncodedSize2.Location = new System.Drawing.Point(545, 236);
+            this.txtEncodedSize2.Name = "txtEncodedSize2";
+            this.txtEncodedSize2.ReadOnly = true;
+            this.txtEncodedSize2.Size = new System.Drawing.Size(210, 22);
+            this.txtEncodedSize2.TabIndex = 23;
             // 
-            // textBox10
+            // txtOriginalSize2
             // 
-            this.textBox10.Location = new System.Drawing.Point(545, 173);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(210, 22);
-            this.textBox10.TabIndex = 22;
+            this.txtOriginalSize2.Location = new System.Drawing.Point(545, 173);
+            this.txtOriginalSize2.Name = "txtOriginalSize2";
+            this.txtOriginalSize2.ReadOnly = true;
+            this.txtOriginalSize2.Size = new System.Drawing.Size(210, 22);
+            this.txtOriginalSize2.TabIndex = 22;
             // 
             // button3
             // 
@@ -350,21 +354,22 @@
             this.button3.Text = "Декодировать";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnHuffmanEncode
             // 
-            this.button4.Location = new System.Drawing.Point(749, 29);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 23);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Закодировать";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHuffmanEncode.Location = new System.Drawing.Point(749, 29);
+            this.btnHuffmanEncode.Name = "btnHuffmanEncode";
+            this.btnHuffmanEncode.Size = new System.Drawing.Size(164, 23);
+            this.btnHuffmanEncode.TabIndex = 20;
+            this.btnHuffmanEncode.Text = "Закодировать";
+            this.btnHuffmanEncode.UseVisualStyleBackColor = true;
+            this.btnHuffmanEncode.Click += new System.EventHandler(this.btnHuffmanEncode_Click);
             // 
-            // textBox11
+            // txtCode2
             // 
-            this.textBox11.Location = new System.Drawing.Point(8, 86);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(718, 22);
-            this.textBox11.TabIndex = 19;
+            this.txtCode2.Location = new System.Drawing.Point(8, 86);
+            this.txtCode2.Name = "txtCode2";
+            this.txtCode2.Size = new System.Drawing.Size(718, 22);
+            this.txtCode2.TabIndex = 19;
             // 
             // label11
             // 
@@ -386,27 +391,27 @@
             this.label12.TabIndex = 17;
             this.label12.Text = "ФИО";
             // 
-            // textBox12
+            // txtFIO2
             // 
-            this.textBox12.Location = new System.Drawing.Point(8, 31);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(718, 22);
-            this.textBox12.TabIndex = 16;
+            this.txtFIO2.Location = new System.Drawing.Point(8, 31);
+            this.txtFIO2.Name = "txtFIO2";
+            this.txtFIO2.Size = new System.Drawing.Size(718, 22);
+            this.txtFIO2.TabIndex = 16;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.textBox14);
-            this.tabPage3.Controls.Add(this.textBox15);
-            this.tabPage3.Controls.Add(this.textBox16);
+            this.tabPage3.Controls.Add(this.txtCompression3);
+            this.tabPage3.Controls.Add(this.txtEncodedSize3);
+            this.tabPage3.Controls.Add(this.txtOriginalSize3);
             this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.textBox17);
+            this.tabPage3.Controls.Add(this.btnAlgEncode);
+            this.tabPage3.Controls.Add(this.txtCode3);
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.textBox18);
+            this.tabPage3.Controls.Add(this.txtFIO3);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -442,29 +447,29 @@
             this.label16.TabIndex = 25;
             this.label16.Text = "Сжатие";
             // 
-            // textBox14
+            // txtCompression3
             // 
-            this.textBox14.Location = new System.Drawing.Point(545, 301);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(210, 22);
-            this.textBox14.TabIndex = 24;
+            this.txtCompression3.Location = new System.Drawing.Point(545, 301);
+            this.txtCompression3.Name = "txtCompression3";
+            this.txtCompression3.ReadOnly = true;
+            this.txtCompression3.Size = new System.Drawing.Size(210, 22);
+            this.txtCompression3.TabIndex = 24;
             // 
-            // textBox15
+            // txtEncodedSize3
             // 
-            this.textBox15.Location = new System.Drawing.Point(545, 236);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(210, 22);
-            this.textBox15.TabIndex = 23;
+            this.txtEncodedSize3.Location = new System.Drawing.Point(545, 236);
+            this.txtEncodedSize3.Name = "txtEncodedSize3";
+            this.txtEncodedSize3.ReadOnly = true;
+            this.txtEncodedSize3.Size = new System.Drawing.Size(210, 22);
+            this.txtEncodedSize3.TabIndex = 23;
             // 
-            // textBox16
+            // txtOriginalSize3
             // 
-            this.textBox16.Location = new System.Drawing.Point(545, 173);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(210, 22);
-            this.textBox16.TabIndex = 22;
+            this.txtOriginalSize3.Location = new System.Drawing.Point(545, 173);
+            this.txtOriginalSize3.Name = "txtOriginalSize3";
+            this.txtOriginalSize3.ReadOnly = true;
+            this.txtOriginalSize3.Size = new System.Drawing.Size(210, 22);
+            this.txtOriginalSize3.TabIndex = 22;
             // 
             // button5
             // 
@@ -475,21 +480,22 @@
             this.button5.Text = "Декодировать";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnAlgEncode
             // 
-            this.button6.Location = new System.Drawing.Point(749, 29);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 23);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Закодировать";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnAlgEncode.Location = new System.Drawing.Point(749, 29);
+            this.btnAlgEncode.Name = "btnAlgEncode";
+            this.btnAlgEncode.Size = new System.Drawing.Size(164, 23);
+            this.btnAlgEncode.TabIndex = 20;
+            this.btnAlgEncode.Text = "Закодировать";
+            this.btnAlgEncode.UseVisualStyleBackColor = true;
+            this.btnAlgEncode.Click += new System.EventHandler(this.btnAlgEncode_Click);
             // 
-            // textBox17
+            // txtCode3
             // 
-            this.textBox17.Location = new System.Drawing.Point(8, 86);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(718, 22);
-            this.textBox17.TabIndex = 19;
+            this.txtCode3.Location = new System.Drawing.Point(8, 86);
+            this.txtCode3.Name = "txtCode3";
+            this.txtCode3.Size = new System.Drawing.Size(718, 22);
+            this.txtCode3.TabIndex = 19;
             // 
             // label17
             // 
@@ -511,12 +517,12 @@
             this.label18.TabIndex = 17;
             this.label18.Text = "ФИО";
             // 
-            // textBox18
+            // txtFIO3
             // 
-            this.textBox18.Location = new System.Drawing.Point(8, 31);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(718, 22);
-            this.textBox18.TabIndex = 16;
+            this.txtFIO3.Location = new System.Drawing.Point(8, 31);
+            this.txtFIO3.Name = "txtFIO3";
+            this.txtFIO3.Size = new System.Drawing.Size(718, 22);
+            this.txtFIO3.TabIndex = 16;
             // 
             // Form1
             // 
@@ -560,32 +566,32 @@
         private System.Windows.Forms.TextBox txtOriginalSize;
         private System.Windows.Forms.TextBox txtProbabilities;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtProbabilities2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtCompression2;
+        private System.Windows.Forms.TextBox txtEncodedSize2;
+        private System.Windows.Forms.TextBox txtOriginalSize2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Button btnHuffmanEncode;
+        private System.Windows.Forms.TextBox txtCode2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtFIO2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtCompression3;
+        private System.Windows.Forms.TextBox txtEncodedSize3;
+        private System.Windows.Forms.TextBox txtOriginalSize3;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Button btnAlgEncode;
+        private System.Windows.Forms.TextBox txtCode3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtFIO3;
     }
 }
 
