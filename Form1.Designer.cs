@@ -138,6 +138,7 @@ namespace Lab1_StepanovDmitriy_6411
             this.txtProbabilities.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtProbabilities.Size = new System.Drawing.Size(446, 151);
             this.txtProbabilities.TabIndex = 15;
+            this.txtProbabilities.Multiline = true;
             // 
             // label6
             // 
@@ -284,6 +285,7 @@ namespace Lab1_StepanovDmitriy_6411
             this.txtProbabilities2.ReadOnly = true;
             this.txtProbabilities2.Size = new System.Drawing.Size(446, 151);
             this.txtProbabilities2.TabIndex = 29;
+            this.txtProbabilities2.Multiline = true;
             // 
             // label7
             // 
